@@ -15,4 +15,8 @@ attr_accessor :balance, :interest_rate
     @balance = @balance - withdraw_amt
   end
 
+  def gain_interest
+    @balance = @balance * (1+interest_rate)
+end
+
 end
